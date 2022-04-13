@@ -21,11 +21,8 @@
     <nav>
       <a href="/">Gmail</a>
       <a href="/">Imagens</a>
-      <div class="apps">
-        <img
-          src="./Assets/app.svg"
-          alt="applicativos"
-        />
+      <div class="app">
+        <img src="./Assets/app.svg" alt="applicativos" class="appSVG" />
       </div>
       <img
         class="profile-picture"
@@ -36,23 +33,39 @@
 
     <section>
       <form action="">
-        <img src="Assets/logo-google.png" alt="logo-google" />
+        <img class="logo" src="Assets/logo-google.png" alt="logo-google" />
         <label for="input-search">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" id="input-search" />
-          <button>X</button>
+          <button id="buttonX" type="reset" onclick="clearInput()">X</button>
           <i class="fa-solid fa-keyboard"></i>
           <i class="fas fa-microphone"></i>
-          <div>
-            <button type="submit">Pesquisa Google</button>
-            <button type="button">Estou com Sorte</button>
-          </div>
-          <p>
-            Disponibilizado pelo Google em: <span>English</span>
-            <span>galego</span>
-          </p>
         </label>
+        <div class="buttonSearch">
+          <button type="submit">Pesquisa Google</button>
+          <button type="button">Estou com Sorte</button>
+        </div>
+        <p>
+          Disponibilizado pelo Google em: <span>English</span>
+          <span>galego</span>
+        </p>
       </form>
     </section>
   </body>
+  <script>
+    let input = document.getElementById("input-search");
+    let button = document.getElementById("buttonX");
+
+    input.addEventListener("input", function (e) {
+      if (e.target.value) {
+        button.style.visibility = "visible";
+      } else {
+        button.style.visibility = "hidden";
+      }
+    });
+
+    function clearInput() {
+      button.style.visibility = "hidden";
+    }
+  </script>
 </html>
