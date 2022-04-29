@@ -139,6 +139,7 @@ p {
   color: #a0a9b5;
   font-size: 14px;
   margin-top: 30px;
+  bottom: 100px;
 }
 p span {
   color: #6495ed;
@@ -146,4 +147,61 @@ p span {
 }
 p span:hover {
   text-decoration: underline;
+}
+.country{
+  display: block;
+  padding: 15px 30px;
+  border-bottom: 1px solid #303134;
+  font-size: 15px;
+  color: #9aa0a6;
+  margin-top: 150px;
+}
+
+footer{
+  background: #171717;
+  font-size: 15px;
+  height: 100px
+}
+
+#geral{
+  margin-top: 15px;
+  padding-left: 30px;
+}
+
+.stLinks, a{
+  display: inline;
+  color: #9aa0a6;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.ndLinks{
+  margin-left: 480px;
+}
+
+.ndLinks, a{
+  display: inline;
+  margin-right: 15px;
+}
+
+#apps{
+  background: gray;
+  width: 350px;
+  height: 500px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.size, img{
+  height: 40px;
+  width: 45px;
+  display: inline;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
 }
