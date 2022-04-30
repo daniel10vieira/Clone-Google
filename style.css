@@ -168,7 +168,7 @@ footer{
   padding-left: 30px;
 }
 
-.stLinks, a{
+.stLinks a{
   display: inline;
   color: #9aa0a6;
   text-decoration: none;
@@ -179,29 +179,61 @@ footer{
   margin-left: 480px;
 }
 
-.ndLinks, a{
+.ndLinks a{
   display: inline;
   margin-right: 15px;
 }
 
-#apps{
+/*  Menu Dropdown */
+.size{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.size:hover{
+  background: #000;
+}
+
+
+.size img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.size span{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.dropdown{
   background: gray;
-  width: 350px;
-  height: 500px;
+  width: 320px;
+  height: 420px;
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-}
-
-.size, img{
-  height: 40px;
-  width: 45px;
-  display: inline;
-}
-
-.container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 30px;
-  column-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  margin-top: 30px;
+  padding: 20px 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  visibility: hidden;
+  transition: all 0.2s ease 0s;
+  box-shadow: 0 0 0 6px #000;
 }

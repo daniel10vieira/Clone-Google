@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,9 @@
         <a href="/">Gmail</a>
         <a href="/">Imagens</a>
         <div class="app">
-          <img src="./Assets/app.svg" alt="applicativos" class="appSVG" />
+          <img src="./Assets/app.svg" alt="applicativos" class="appSVG" onclick="showMenu()"/>
+        </div>
+        <div class="app">
           <div>
             <img
               class="profile-picture"
@@ -33,182 +35,137 @@
           </div>
         </div>
       </nav>
-      <div class="container" id="apps">
 
+      <div class="dropdown">
         <div class="size">
-        <img src="./Assets/profile.png" alt="Foto de perfil" />
+          <img src="./Assets/profile.png" alt="Foto de perfil" />
           <span> conta </span>
         </div>
-        
+
         <div class="size">
           <img src="./Assets/pesquisa.png" />
           <span> Pesquisa </span>
         </div>
-        
+
         <div class="size">
           <img src="./Assets/empresa.png" />
           <span> Perfil da empresa </span>
         </div>
-        
+
         <div class="size">
-          <img src="./Assets/maps.png"/>
+          <img src="./Assets/maps.png" />
           <span> Maps </span>
         </div>
-        
+
         <div class="size">
           <img src="./Assets/youtube.png" />
-          <span>
-            Youtube
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/play store.png"/>
-          <span>
-            Play
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/noticias.png"/>
-          <span>
-            Notícias
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/gmail.png"/>
-          <span>
-            Gmail
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/meet.svg"/>
-          <span>
-            Meet
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/chat.png"/>
-          <span>
-            Chat
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/contatos.png"/>
-          <span>
-            Contatos
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/drive.png"/>
-          <span>
-            Drive
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/calendário.png"/>
-          <span>
-            Agenda
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/tradutor.png"/>
-          <span>
-            Tradutor
-          </span>
-        </div>
-        
-        <div class="size">
-          <img src="./Assets/fotos.png"/>
-          <span>
-            Fotos
-          </span>
+          <span> Youtube </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/duo-removebg-preview.png"/>
-          <span>
-            Duo
-          </span>
+          <img src="./Assets/play store.png" />
+          <span> Play </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/shopping.png"/>
-          <span>
-            Shopping
-          </span>
+          <img src="./Assets/noticias.png" />
+          <span> Notícias </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/finanças.png"/>
-          <span>
-            Finanças
-          </span>
+          <img src="./Assets/gmail.png" />
+          <span> Gmail </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/document.png"/>
-          <span>
-            Documentos
-          </span>
+          <img src="./Assets/meet.svg" />
+          <span> Meet </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/planilhas.png"/>
-          <span>
-            Planilhas
-          </span>
+          <img src="./Assets/chat.png" />
+          <span> Chat </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/apresentação.png"/>
-          <span>
-            Apresentações
-          </span>
+          <img src="./Assets/contatos.png" />
+          <span> Contatos </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/livros.png"/>
-          <span>
-            Livros
-          </span>
+          <img src="./Assets/drive.png" />
+          <span> Drive </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/blogger.png"/>
-          <span>
-            Blogger
-          </span>
+          <img src="./Assets/calendário.png" />
+          <span> Agenda </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/hangouts.png"/>
-          <span>
-            Hangouts
-          </span>
+          <img src="./Assets/tradutor.png" />
+          <span> Tradutor </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/keep.png"/>
-          <span>
-            Keep
-          </span>
+          <img src="./Assets/fotos.png" />
+          <span> Fotos </span>
         </div>
 
         <div class="size">
-          <img src="./Assets/jamboard.png"/>
-          <span>
-            Jamboard
-          </span>
+          <img src="./Assets/duo-removebg-preview.png" />
+          <span> Duo </span>
         </div>
 
+        <div class="size">
+          <img src="./Assets/shopping.png" />
+          <span> Shopping </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/finanças.png" />
+          <span> Finanças </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/document.png" />
+          <span> Documentos </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/planilhas.png" />
+          <span> Planilhas </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/apresentação.png" />
+          <span> Apresentações </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/livros.png" />
+          <span> Livros </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/blogger.png" />
+          <span> Blogger </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/hangouts.png" />
+          <span> Hangouts </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/keep.png" />
+          <span> Keep </span>
+        </div>
+
+        <div class="size">
+          <img src="./Assets/jamboard.png" />
+          <span> Jamboard </span>
+        </div>
       </div>
     </header>
 
@@ -258,20 +215,5 @@
       </div>
     </footer>
   </body>
-  <script>
-    let input = document.getElementById("input-search");
-    let button = document.getElementById("buttonX");
-
-    input.addEventListener("input", function (e) {
-      if (e.target.value) {
-        button.style.visibility = "visible";
-      } else {
-        button.style.visibility = "hidden";
-      }
-    });
-
-    function clearInput() {
-      button.style.visibility = "hidden";
-    }
-  </script>
+  <script src="./script.js"></script>
 </html>
