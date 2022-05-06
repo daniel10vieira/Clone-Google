@@ -168,7 +168,7 @@ footer{
   padding-left: 30px;
 }
 
-.stLinks a{
+.stLinks, a{
   display: inline;
   color: #9aa0a6;
   text-decoration: none;
@@ -179,13 +179,14 @@ footer{
   margin-left: 480px;
 }
 
-.ndLinks a{
+.ndLinks, a{
   display: inline;
   margin-right: 15px;
 }
 
 /*  Menu Dropdown */
 .size{
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,7 +196,8 @@ footer{
 }
 
 .size:hover{
-  background: #000;
+  background: #272727;
+  transition:all 0.3s ease 0s;
 }
 
 
@@ -217,7 +219,7 @@ footer{
 }
 
 .dropdown{
-  background: gray;
+  background: #2e2e2e;
   width: 320px;
   height: 420px;
   border-radius: 5px;
@@ -230,10 +232,57 @@ footer{
   right: 0;
   margin-right: 20px;
   margin-top: 30px;
-  padding: 20px 0;
+  padding: 20px 0 5px 0;
   overflow-y: scroll;
   scroll-behavior: smooth;
   visibility: hidden;
-  transition: all 0.2s ease 0s;
-  box-shadow: 0 0 0 6px #000;
+  transition: all 0.01s ease 0s;
+  box-shadow: 2px 3px 2px 4px #505153;
+}
+
+.package{
+  border-top: 1px solid gray;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+/* Barra de rolagem */
+.dropdown::-webkit-scrollbar {
+  width: 6px;
+  /* width of the entire scrollbar */
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: none;
+  /* color of the tracking area */
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background-color: #4F4F4F;
+  /* color of the scroll thumb */
+  border-radius: 15px;
+  /* roundness of the scroll thumb */
+}
+
+/* Botão do Final do Menu Dropdown */
+
+.more{
+  background: none;
+  border: 1px solid #9aa0a6;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 15px;
+  color: #6495ed;
+  cursor: pointer;
+}
+
+.more:hover{
+  background: #4F4F4F;
+  transition: all 0.3s ease 0s;
 }

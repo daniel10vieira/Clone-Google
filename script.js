@@ -12,7 +12,7 @@ function clearInput() {
 }
 
 function showMenu() {
-  let child = document.querySelector(".container");
+  let child = document.querySelector(".dropdown");
 
   if (child.style.visibility === "hidden" || child.style.visibility === "") {
     child.style = `
