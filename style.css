@@ -22,7 +22,7 @@ nav a {
   text-decoration: none;
   font-size: 13px;
 }
-a + a {
+nav a + a {
   margin-right: 20px;
 }
 a:hover {
@@ -148,44 +148,59 @@ p span {
 p span:hover {
   text-decoration: underline;
 }
-.country{
+
+/*  Footer */
+.country {
   display: block;
   padding: 15px 30px;
   border-bottom: 1px solid #303134;
   font-size: 15px;
   color: #9aa0a6;
-  margin-top: 150px;
 }
 
-footer{
+footer {
   background: #171717;
   font-size: 15px;
-  height: 100px
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-#geral{
-  margin-top: 15px;
-  padding-left: 30px;
+.container-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 30px;
 }
 
-.stLinks, a{
-  display: inline;
+.stLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.stLinks a {
   color: #9aa0a6;
   text-decoration: none;
-  margin-right: 15px;
 }
 
-.ndLinks{
-  margin-left: 480px;
+.ndLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
-.ndLinks, a{
-  display: inline;
-  margin-right: 15px;
+.ndLinks a {
+  color: #9aa0a6;
+  text-decoration: none;
 }
 
+.stLinks a:hover {
+  text-decoration: underline;
+}
 /*  Menu Dropdown */
-.size{
+.size {
   color: white;
   display: flex;
   flex-direction: column;
@@ -195,19 +210,18 @@ footer{
   border-radius: 5px;
 }
 
-.size:hover{
+.size:hover {
   background: #272727;
-  transition:all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-
-.size img{
+.size img {
   height: 40px;
   width: 40px;
   border-radius: 50%;
 }
 
-.size span{
+.size span {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -218,7 +232,7 @@ footer{
   margin-top: 5px;
 }
 
-.dropdown{
+.dropdown {
   background: #2e2e2e;
   width: 320px;
   height: 420px;
@@ -240,7 +254,7 @@ footer{
   box-shadow: 2px 3px 2px 4px #505153;
 }
 
-.package{
+.package {
   border-top: 1px solid gray;
   align-items: center;
   justify-content: center;
@@ -263,7 +277,7 @@ footer{
 }
 
 .dropdown::-webkit-scrollbar-thumb {
-  background-color: #4F4F4F;
+  background-color: #4f4f4f;
   /* color of the scroll thumb */
   border-radius: 15px;
   /* roundness of the scroll thumb */
@@ -271,7 +285,7 @@ footer{
 
 /* Botão do Final do Menu Dropdown */
 
-.more{
+.more {
   background: none;
   border: 1px solid #9aa0a6;
   border-radius: 5px;
@@ -282,7 +296,10 @@ footer{
   cursor: pointer;
 }
 
-.more:hover{
-  background: #4F4F4F;
+.more:hover {
+  background: #4f4f4f;
   transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-widith: 600px) {
 }
